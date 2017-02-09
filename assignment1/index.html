@@ -1,0 +1,20 @@
+<html ng-app='LunchCheck'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Directives with Isolate Scope and '&'</title>
+  </head>
+  <body>
+    <h1>LUNCH CHECKER</h1>
+      <div id="list" ng-controller='LunchCheckController'>
+        <input type="text" ng-model="items" placeholder="item name">
+        <button ng-click="checkItems();">Check</button>
+        <br>
+        <br>
+        <div>
+          {{message}}
+        </div>
+      </div>
+  </body>
+</html>
