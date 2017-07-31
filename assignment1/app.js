@@ -10,11 +10,11 @@ function LunchCheckController($scope) {
 
   $scope.checkItems = function () {
     $scope.result = $scope.items.split(',')
-    if($scope.items.length==0){
+    if($scope.result==0){
       $scope.message="Empty"
     }
     else {
-      if($scope.items.length<3){
+      if($scope.result.length<=3){
         $scope.message="Enjoy!"
       }
       else{
