@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="css/public.css">
+<div ng-controller="GetInfoController as get">
+
+<h1>Information Page:</h1>
+</br>
+{{get.getUserData()}}
+{{get.getInfo()}}
+<h3>Welcome
+<div ng-if="get.userData==null">  You aren't registered, <a ui-sref="registration">click here</a>
+</div>
+<div ng-if="get.userData!=null">
+  {{get.userData.username}}</h3>
+  </br>
+  Email: {{get.userData.email}}
+  </br>
+  Phone: {{get.userData.phone}}
+  </br>
+<h3>Favorite Menu</h3>
+</br>
+<div id="menu-tile"><span>{{get.info.name}}</span></div>
+</br>
+Description:  {{get.info.description}}
+</br>
+</div>
+
+</div>
